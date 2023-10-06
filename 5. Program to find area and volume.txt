@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float r,h,area,volume;
+    printf("Enter the values");
+    scanf("%f%f",&r,&h);
+    area=3.14*r*(r+sqrt(h*h+r*r));
+    volume=0.33*3.14*r*r*h;
+    printf("The area is=%f\n",area);
+    printf("The vol is=%f",volume);
+}
