@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float l=44,b=56,r,area,peri;
+    area=l*b;
+    printf("The area is=%f\n",area);
+    r=sqrt(area/3.14);
+    peri=3.14*2*r;
+    printf("The peri is=%f",peri);
+}
