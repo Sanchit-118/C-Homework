@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+    int area,peri,area1,peri1,area2,peri2,r,s,l,b,n;
+    printf("1.Circle\n2.Square\n3.Rectangle\nEnter the choice");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+        printf("Enter the radius");
+        scanf("%d",&r);
+        area=3.14*r*r;
+        peri=2*3.14*r;
+        printf("The area of circle is=%d\n",area);
+        printf("The peri of circle is=%d\n",peri);
+        break;
+        case 2:
+        printf("Enter the side");
+        scanf("%d",&s);
+        area1=s*s;
+        peri1=4*s;
+        printf("The area of square is=%d\n",area1);
+        printf("The peri of square is=%d\n",peri1);
+        break;
+        case 3:
+        printf("Enter the length and breadth");
+        scanf("%d%d",&l,&b);
+        area2=l*b;
+        peri2=2*(l+b);
+        printf("The area of rectangle is=%d\n",area2);
+        printf("The peri of rectangle is=%d\n",peri2);
+        break;
+        default:
+        printf("Enter the correct value");
+    }
+}
