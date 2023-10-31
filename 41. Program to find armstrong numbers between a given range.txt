@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int start,end,number,originalno,rem,result,n;
+    printf("Enter the starting no");
+    scanf("%d",&start);
+    printf("Enter the ending number");
+    scanf("%d",&end);
+    printf("Armstrong no between %d and %d are",start,end);
+    for(number=start;number<=end;++number)
+    {
+        originalno=number;
+        n=0;
+        result=0;
+        while(originalno!=0)
+    {
+        originalno/=10;
+        ++n;
+    }
+    originalno=number;
+    while(originalno!=0)
+    {
+        rem=originalno%10;
+        result+=pow(rem,n);
+        originalno/=10;
+    }
+    if(result==number)
+    {
+        printf("%d\n",number);
+    }
+    }
+}
