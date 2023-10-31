@@ -1,0 +1,39 @@
+#include<stdio.h>
+void main()
+{
+    int Maths,Eng,Hindi,Science,Sst,Total,Avg;
+    char Grade;
+    printf("Enter the marks of= \nMaths\nEng\nHindi\nScience\nSst");
+    scanf("%d%d%d%d%d",&Maths,&Eng,&Hindi,&Science,&Sst);
+    Total=Maths+Eng+Hindi+Science+Sst;
+    printf("Total=%d\n",Total);
+    Avg=Total/5;
+    printf("Avg=%d\n",Avg);
+    if((Avg>90)&&(Avg<=100))
+    {
+        Grade='A';
+        printf("The grade are=%c",Grade);
+    }
+    else if((Avg>80)&&(Avg<=90))
+    {
+        Grade='B';
+        printf("The grade are=%c",Grade);
+    }
+    else if((Avg>70)&&(Avg<=80))
+    {
+        Grade='C';
+        printf("The grade are=%c",Grade);
+    }
+    else if((Avg>60)&&(Avg<=70))
+    {
+        Grade='D';
+        printf("The grade are=%c",Grade);
+    }
+    else if((Avg>50)&&(Avg<=60))
+    {
+        Grade='E';
+        printf("The grade are=%c",Grade);
+    }
+    else
+    printf("Fail");
+}
